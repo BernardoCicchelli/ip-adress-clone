@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzgmA4xlfpzIyEPJI7pvY85gmjjOLGi-I&callback=initMap">
+</script>
+    <script defer src="script.js"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>IP Address Tracker</title>
+  </head>
+  <body>
+    <div class="bg-pattern">
+      <h1>IP Address Tracker</h1>
+      <div class="search-btn">
+        <form id="form">
+          <input class="search" type="search" name="" id="search" />
+          <button class="button" type="submit">
+            <img src="/images/icon-arrow.svg" alt="" />
+          </button>
+        </form>
+      </div>
+      <div class="search-tracker__card">
+        
+        <div class="search-tracker__card-info">
+          <span class="search-tracker__card-title">IP ADDRESS</span>
+          <h6 id="ip-adress" class="search-tracker__card-subtitle"></h6>
+        </div>
+        <div class="search-tracker__card-info">
+          <span class="search-tracker__card-title">LOCATION</span>
+          <h6 id="location" class="search-tracker__card-subtitle"></h6>
+        </div>
+        <div class="search-tracker__card-info">
+          <span class="search-tracker__card-title">TIMEZONE</span>
+          <h6 id="timezone" class="search-tracker__card-subtitle"></h6>
+        </div>
+        <div class="search-tracker__card-info">
+          <span class="search-tracker__card-title">ISP</span>
+          <h6 id="isp" class="search-tracker__card-subtitle"></h6>
+        </div>
+      </div>
+    </div>
+    <div id="map"></div>
+  </body>
+</html>
